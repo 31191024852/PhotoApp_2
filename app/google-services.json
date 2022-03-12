@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696879730004",
+    "firebase_url": "https://mobile-db-wsv-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mobile-db-wsv",
+    "storage_bucket": "mobile-db-wsv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696879730004:android:c2a9bb98dd6a6bbb06ccc1",
+        "android_client_info": {
+          "package_name": "com.example.photoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696879730004-033k4rj8adkt02113ekp9s5c0s88fqfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiMKRY3HsE--96MCfKxAYcVijlOISrD4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696879730004-033k4rj8adkt02113ekp9s5c0s88fqfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

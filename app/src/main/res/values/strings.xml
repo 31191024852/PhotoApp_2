@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Photo App</string>
+    <string name="title">Title</string>
+    <string name="Description">Description</string>
+    <string name="Caption">Caption</string>
+    <string name="lo">Lỗi tải ảnh</string>
+</resources>
