@@ -3,9 +3,10 @@ package com.example.photoapp;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Article {
+public class Article implements Serializable {
     private String article_description="";
     private String article_id ="";
     private String article_image="";

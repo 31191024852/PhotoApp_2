@@ -12,15 +12,18 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     GridView gridview;
     private final AdapterView.OnItemClickListener onItemClick = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Intent intent = new Intent(getBaseContext(), ViewArticleActivity.class);
             intent.putExtra("id",gridview.getAdapter().getItemId(position));
+            intent.putExtra("art", (Serializable) gridview.getAdapter().getItem(position));
             startActivity(intent);
         }
     };
