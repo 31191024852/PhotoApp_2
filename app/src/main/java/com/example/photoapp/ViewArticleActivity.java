@@ -1,12 +1,15 @@
 package com.example.photoapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 public class ViewArticleActivity extends AppCompatActivity {
     ImageView iv_detail;
@@ -22,9 +25,10 @@ public class ViewArticleActivity extends AppCompatActivity {
         tv_detail_description = findViewById(R.id.tv_detail_description);
 
         String id = String.valueOf(getIntent().getLongExtra("id", 0));
-        //new DownloadImage(iv_detail).execute((getPhotoFromId(id, generatePhotoData()).getSource_photo()));
-        Picasso.get().load((ArticleData.getPhotoFromId(id).getArticle_image())).resize(400, 500).centerCrop().into(iv_detail);
-        tv_detail_title.setText((ArticleData.getPhotoFromId(id)).getArticle_title());
-        tv_detail_description.setText((ArticleData.getPhotoFromId(id)).getArticle_description());
+        Article art = (Article) getIntent().getSerializableExtra("art");
+
+        Picasso.get().load(art.getArticle_image()).resize(400, 500).centerCrop().into(iv_detail);
+        tv_detail_title.setText(art.getArticle_title());
+        tv_detail_description.setText(art.getArticle_description());
     }
 }
